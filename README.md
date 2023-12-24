@@ -1,4 +1,5 @@
 # Xamarin Forms (c#) - Consumo de Api Rest
+Toda la logica esta en WorkShopXamarin.
 
 Consumo de Api Rest para obtener todos los usuarios, post y albunes de un JSON.
 
