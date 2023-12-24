@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkShopXamarin.MainPage" BackgroundColor="White">
+
+    <StackLayout Spacing="20">
+        <Label Text="Consumo de Api" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Desarrollado por Ivan Paez Coronell" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Nota: Consumo la api de JSON Server ya que en el backend del WorkShop tenia algunos bugs."/>
+
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button Text="Usuarios" HorizontalOptions="Fill" Margin="15" CornerRadius="20" TextColor="White" BackgroundColor="SeaGreen" Clicked="Button_Clicked_Users"/>
+        <Button Text="Posts" HorizontalOptions="Fill" Margin="15" CornerRadius="20" TextColor="White" BackgroundColor="SeaGreen" Clicked="Button_Clicked_Posts"/>
+        <Button Text="Albunes" HorizontalOptions="Fill" Margin="15" CornerRadius="20" TextColor="White" BackgroundColor="SeaGreen" Clicked="Button_Clicked_Albums"/>
+    </StackLayout>
+
+</ContentPage>

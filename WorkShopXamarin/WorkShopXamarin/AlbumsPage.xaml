@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkShopXamarin.AlbumsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Lista de Albunes" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" Margin="20"/>
+            </Frame>
+            <ListView x:Name="listaAlbunes" HasUnevenRows="True" BackgroundColor="WhiteSmoke">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="10" BackgroundColor="White" >
+                                <Image Source="{Binding Url}" Aspect="AspectFill" HeightRequest="100" />
+                                <Label Text="{Binding Title}" TextColor="Black" FontAttributes="Bold" Margin="10,0,10,0"/>
+                                <Label Text="{Binding Title}" TextColor="Gray" Margin="10,0,10,10"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
